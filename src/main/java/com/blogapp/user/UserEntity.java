@@ -77,6 +77,21 @@ public class UserEntity {
 	public UserEntity() {
 		super();
 	}
+
+	public UserEntity(Long id, String username, String email, String bio, String image) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.email = email;
+		this.bio = bio;
+		this.image = image;
+	}
+
+	@Override
+	public String toString() {
+		return "UserEntity [id=" + id + ", username=" + username + ", email=" + email + ", bio=" + bio + ", image="
+				+ image + "]";
+	}
 	
 	
 	

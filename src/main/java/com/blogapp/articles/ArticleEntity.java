@@ -107,6 +107,24 @@ public class ArticleEntity {
 	public ArticleEntity() {
 		super();
 	}
+
+	public ArticleEntity(Long id, String title, String slug, String subtitle, String body, Date createdAt,
+			UserEntity author) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.slug = slug;
+		this.subtitle = subtitle;
+		this.body = body;
+		this.createdAt = createdAt;
+		this.author = author;
+	}
+
+	@Override
+	public String toString() {
+		return "ArticleEntity [id=" + id + ", title=" + title + ", slug=" + slug + ", subtitle=" + subtitle + ", body="
+				+ body + ", createdAt=" + createdAt + ", author=" + author + "]";
+	}
 	
 	
 

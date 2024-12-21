@@ -92,6 +92,22 @@ public class CommentEntity {
 	public CommentEntity() {
 		super();
 	}
+
+	public CommentEntity(Long id, String title, String body, Date createdAt, ArticleEntity article, UserEntity author) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.body = body;
+		this.createdAt = createdAt;
+		this.article = article;
+		this.author = author;
+	}
+
+	@Override
+	public String toString() {
+		return "CommentEntity [id=" + id + ", title=" + title + ", body=" + body + ", createdAt=" + createdAt
+				+ ", article=" + article + ", author=" + author + "]";
+	}
 	
 	
 	
